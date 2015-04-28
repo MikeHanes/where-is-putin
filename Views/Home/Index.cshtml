@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = @"Where is Putin? | Memory game";
+}
+
+@*<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1500316261/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1500316261&linkCode=as2&tag=whispu-21&linkId=ABW6NHKQJK4G7XQZ"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1500316261&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1500316261" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>*@
+
+<img src="~/Images/wink.jpg" style="float:left;height:70px ;margin-top:10px;"/>
+
+
+<div style="float:right; margin-right:115px">
+
+    
+    <h1>Where is Vladimir Putin?</h1>
+    <p >
+    <a class="tag" href="https://twitter.com/search?q=whereisputin">#WhereIsPutin</a>
+        <a class="tag" href="https://twitter.com/search?q=ПутинУмер">#ПутинУмер</a>
+    <a class="tag" href="https://twitter.com/search?q=isputindead">#IsPutinDead</a>
+   
+    
+       
+    </p>
+    
+    
+    
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="memory_board"></div>
+<script>newBoard();</script>
+
+@*<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/0593072952/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0593072952&linkCode=as2&tag=F-21&linkId=NETBTVEQW436YURQ">
+        <img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0593072952&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21">
+    </a>
+    <img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=0593072952" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1847084230/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1847084230&linkCode=as2&tag=whispu-21&linkId=W7E7AAJK2K47YI2K"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1847084230&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1847084230" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/0571308015/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0571308015&linkCode=as2&tag=whispu-21&linkId=MNRG4WI5EJMOCMKT"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0571308015&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=0571308015" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1408859289/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1408859289&linkCode=as2&tag=whispu-21&linkId=6NCTXTOGACMPQC2D"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1408859289&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1408859289" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1476795207/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1476795207&linkCode=as2&tag=whispu-21&linkId=5OXPT2FO3BP3IYOV"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1476795207&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1476795207" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/0300205228/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0300205228&linkCode=as2&tag=whispu-21&linkId=UCLR6ZA767P537GE"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0300205228&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=0300205228" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1843430509/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1843430509&linkCode=as2&tag=whispu-21&linkId=KDUEE3OQN2TLS6JZ"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1843430509&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1843430509" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>F
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1137280034/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1137280034&linkCode=as2&tag=whispu-21&linkId=E4CXO3ZOWQWDZNJY"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1137280034&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1137280034" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1780765045/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1780765045&linkCode=as2&tag=whispu-21&linkId=NKTQESQRA5DPBMOM"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1780765045&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1780765045" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>
+
+<div class="book">
+    <a href="http://www.amazon.co.uk/gp/product/1566569907/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=1566569907&linkCode=as2&tag=whispu-21&linkId=P7JBS2IJ4JAK2LAF"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1566569907&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=whispu-21"></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=whispu-21&l=as2&o=2&a=1566569907" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+</div>*@
+<div style="clear:both"></div>

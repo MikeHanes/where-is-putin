@@ -1,0 +1,29 @@
+﻿body {
+   
+    background:#282828;
+   
+}
+
+.content-wrapper
+{
+    width:1200px; margin:0 auto;
+    position:relative;
+    padding-bottom:30px;
+}
+
+.book
+{
+    float:left;
+    margin:30px 60px 0 0px;
+}
+
+h1 {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:65px;color:#eee;margin:0px 0 0 0;}
+
+.tag{
+    color:#55acee;
+    text-decoration:none;
+   margin-left:20px;
+   display:inline-block;
+}
+
+p {text-align:right;margin:0px 0 0 0}
